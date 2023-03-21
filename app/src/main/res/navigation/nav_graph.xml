@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fileManageHomeFragment">
+
+    <fragment
+        android:id="@+id/fileManageHomeFragment"
+        android:name="com.gogumac.thenote.fileManage.FileManageHomeFragment"
+        android:label="FileManageHomeFragment" >
+        <action
+            android:id="@+id/action_fileManageHomeFragment_to_createNewNoteFragment"
+            app:destination="@id/createNewNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewNoteFragment"
+        android:name="com.gogumac.thenote.createNewNote.CreateNewNoteFragment"
+        android:label="CreateNewNoteFragment" />
+</navigation>
